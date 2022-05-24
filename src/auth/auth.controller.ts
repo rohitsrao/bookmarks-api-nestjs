@@ -13,6 +13,6 @@ export class AuthController {
 
   @Post('signup')
   signUp (@Body() dto: AuthDto) {
-    this.authService.signup(dto);
+    return this.authService.signup(dto);
   }
 }
